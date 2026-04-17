@@ -1,10 +1,10 @@
-# 🏎️ Electric Go-Kart: Custom Traction Control & BMS on a PVC Chassis
+# Electric Go-Kart: Custom Traction Control & BMS on a PVC Chassis
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Platform: Arduino](https://img.shields.io/badge/Platform-Arduino-00979C.svg)
 ![Simulation: MATLAB](https://img.shields.io/badge/Simulation-MATLAB-e16723.svg)
 
-👋 **Hi there! We are Aaditya Amresh Kamble and Yash Kumar.** We are final-year Materials Engineering students at the **Indian Institute of Technology Jodhpur**, working under the guidance of **Dr. Srijan Sengupta**. 
+**Hi there! We are Aaditya Amresh Kamble and Yash Kumar.** We are final-year Materials Engineering students at the **Indian Institute of Technology Jodhpur**, working under the guidance of **Dr. Srijan Sengupta**. 
 
 This repository contains the complete source code, MATLAB simulations, and hardware schematics for our capstone project: a fully functional, low-cost electric go-kart built from scratch. We wanted to step out of our materials engineering comfort zone and tackle a complex, multi-domain problem combining mechanical design, embedded C++ programming, and control theory. 
 
@@ -12,7 +12,7 @@ The result? An EV platform that actively manages its own wheel slip and battery 
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 1. **PVC Ladder-Frame Chassis:** We validated the use of solvent-welded Schedule-40 PVC for a low-cost, structurally sound EV prototype frame (with steel inserts at high-stress nodes).
 2. **Embedded Traction Control System (TCS):** Because we used dual rear BLDC hub motors without a mechanical differential, we built a proportional feedback TCS in software. It catches and corrects wheel slip in under **240 ms**, preventing spin-outs and reducing current spikes by over 57%.
@@ -21,7 +21,7 @@ The result? An EV platform that actively manages its own wheel slip and battery 
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 📦 Electric-GoKart
@@ -39,8 +39,8 @@ The result? An EV platform that actively manages its own wheel slip and battery 
  ┃ ┗ 📜 Steering_Ackermann_2D.pdf
  ┣ 📜 Research_Paper.pdf          # Full IEEE-formatted project paper
  ┗ 📜 README.md
-
-## 🛠️ Hardware & Components Overview
+```
+## Hardware & Components Overview
 
 * **Microcontroller:** Arduino Nano (ATmega328)
 * **Motors:** 2x 36V 350W Brushless DC (BLDC) Hub Motors with Hall Sensors
@@ -51,7 +51,7 @@ The result? An EV platform that actively manages its own wheel slip and battery 
 
 ---
 
-## 🚀 How to Run the Simulations
+## How to Run the Simulations
 
 We highly recommend playing with the MATLAB simulations before touching the Arduino code. It helps to understand the physics of what the kart is actually doing.
 
@@ -63,7 +63,7 @@ We highly recommend playing with the MATLAB simulations before touching the Ardu
 
 ---
 
-## 💻 Uploading to the Kart
+## Uploading to the Kart
 
 1. Open the `Arduino_Code` folder using the Arduino IDE.
 2. Ensure you have the required libraries installed via the Library Manager:
@@ -76,20 +76,21 @@ We highly recommend playing with the MATLAB simulations before touching the Ardu
 
 ---
 
-## 📈 Real-World Performance
+## Real-World Performance
 
 We extensively field-tested this kart. Our data logged an acceleration of 0-15 km/h in ~4 seconds (with a 75kg driver). When we simulated an ice patch by lubricating one rear tire, the Arduino detected the free-spinning wheel and clamped the PWM output down, maintaining straight-line stability just as our MATLAB model predicted. Over 45 minutes of hard track testing, our BMS threw zero nuisance trips.
 
 ---
 
-## 📖 Read Our Paper
+## Read Our Paper
 
 For a deep dive into the math, physics, and control algorithms, please read our full IEEE-formatted research paper included in this repository: `Research_Paper.pdf`.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 A massive thank you to our guide, **Dr. Srijan Sengupta**, for his patience, advice on dealing with ground-loop issues, and for encouraging us to push the boundaries of what materials engineering students can build.
 
 *Built with sweat, late nights, and a lot of PVC primer at IIT Jodhpur.* 🇮🇳
+
